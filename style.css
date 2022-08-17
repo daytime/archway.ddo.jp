@@ -9,7 +9,7 @@ div {
 
 h1 {
     color: rgb(0, 55, 255);
-    font-size: 80px;
+    font-size: 100px;
     background-color: rgba(131, 27, 88, 0.644);
     /*width: calc(100% / 3);*/
     margin: 100px 200px 50px 100px;
@@ -19,6 +19,8 @@ h1 {
 p {
     color: red;
     font-size: 50px;
+    background-color: rgba(67, 194, 73, 0.644);
+    margin: 80px 250px 50px 30px;
 }
 
 div:hover,p:hover {
