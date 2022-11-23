@@ -1,5 +1,43 @@
+<<<<<<< HEAD
         div {
             color: green;
             background-color: blue;
             font-size: 120px;
         }
+=======
+div {
+    color: red;
+    font-size: 9px;
+    background-color: rgba(49, 106, 191, 0.644);
+    width: calc(100% / 3);
+    margin: 100px 0 80px 50px;
+}
+
+
+h1 {
+    color: rgb(0, 55, 255);
+    font-size: 100px;
+    background-color: rgba(131, 27, 88, 0.644);
+    /* width: calc(100% / 3); */
+    margin: 100px 200px 50px 100px;
+    display: flex;
+    /* justify-content: center; */
+    
+}
+
+
+p {
+    color: red;
+    font-size: 50px;
+    background-color: rgba(67, 194, 73, 0.644);
+    margin: 80px 250px 50px 30px;
+}
+
+div:hover,p:hover {
+    background-color: blue;
+}
+
+h1:hover {
+    background-color: rgb(91, 173, 62);
+}
+>>>>>>> f8031ad0e938ad34a2ff07e7507b504bcf52662c
