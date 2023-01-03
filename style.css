@@ -1,84 +1,31 @@
-div {
-  color: green;
-  background-color: blue;
-  font-size: 120px;
-}
-div {
-  color: red;
-  font-size: 9px;
-  background-color: rgba(49, 106, 191, 0.644);
-  width: calc(100% / 3);
-  margin: 100px 0 80px 50px;
-}
-
-h1 {
-  color: rgb(0, 55, 255);
-  font-size: 100px;
-  background-color: rgba(131, 27, 88, 0.644);
-  /* width: calc(100% / 3); */
-  margin: 100px 200px 50px 100px;
-  display: flex;
-  /* justify-content: center; */
-  h2 {
-    color: green;
-    background-color: blue;
-    font-size: 120px;
-  }
-
-  div {
-    color: red;
-    font-size: 9px;
-    background-color: rgba(49, 106, 191, 0.644);
-    width: calc(100% / 3);
-    margin: 100px 0 80px 50px;
-  }
-
-  h1 {
-    color: rgb(0, 55, 255);
-    font-size: 100px;
-    background-color: rgba(131, 27, 88, 0.644);
-    /* width: calc(100% / 3); */
-    margin: 100px 200px 50px 100px;
+body {
+    width: 800px;
+    margin: 0 auto;
+    min-height: 100vh;
     display: flex;
-    /* justify-content: center; */
-
-    color: red;
-    font-size: 80px;
-    background-color: rgba(131, 27, 88, 0.644);
-    /*width: calc(100% / 3);*/
-    margin: 100px 200px 50px 100px;
-  }
-
-  color: red;
-  font-size: 80px;
-  background-color: rgba(131, 27, 88, 0.644);
-  /*width: calc(100% / 3);*/
-  margin: 100px 200px 50px 100px;
+    flex-direction: column;
 }
-
-p {
-  color: red;
-  font-size: 50px;
-  background-color: rgba(67, 194, 73, 0.644);
-  margin: 80px 250px 50px 30px;
+header {
+    height: 150px;
 }
-
-div:hover,
-p:hover {
-  background-color: blue;
+div {
+    display: flex;
+    flex: 1;
 }
-
-h1:hover {
-  background-color: rgb(91, 173, 62);
+main {
+    flex: 1;
 }
-p {
-  color: red;
-  font-size: 50px;
-  background-color: rgba(67, 194, 73, 0.644);
-  margin: 80px 250px 50px 30px;
+nav {
+    width: 150px;
 }
-
-div:hover,
-p:hover {
-  background-color: blue;
+aside {
+    width: 200px;
+}
+footer {
+    height: 200px;
+}
+@media screen and (max-width: 900px) {
+    body {
+        width: 100%;
+    }
 }
