@@ -1,4 +1,4 @@
-const question = "ゲーム史上、最も売れたゲーム機は次の打ちどれ？";
+const question = 'ゲーム史上、最も売れたゲーム機は次の打ちどれ？';
 const answers = [
     "スーパーファミコン",
     "プレイステーション2",
@@ -6,19 +6,12 @@ const answers = [
     "ニンテンドーDS",
 ];
 const correct = "ニンテンドーDS";
-const $button = document.getElementsByTagName("button");
+const $button = document.getElementsByTagName('button');
 
 const setupQuiz = () => {
-    console.log(document.getElementById("js-question").textContent);
-    document.getElementById("js-question").textContent = "Question";
-    document.getElementById("js-question").textContent = question;
+    document.getElementById('js-question').textContent = question;
 
-    // $button[0].textContent = answers[0];
-    // $button[1].textContent = answers[1];
-    // $button[2].textContent = answers[2];
-    // $button[3].textContent = answers[3];
-
-    let buttonIndex = 0;
+     let buttonIndex = 0;
     let buttonLength = $button.length;
     while (buttonIndex < buttonLength) {
         $button[buttonIndex].textContent = answers[buttonIndex];
@@ -27,27 +20,20 @@ const setupQuiz = () => {
 };
 
 
-const startQuiz(){
-$button[0].addEventListener("click", () => {
-    if (correct === $button[0].textContent) {
-        window.alert("正解！");
-    } else {
-        window.alert("不正解！");
-    }
-});
-
-
-while (buttonIndex < buttonLength){
-$button[buttonIndex].addEventListener("click", (e) => {
+const startQuiz = () => {
+    let handlerIndex = 0;
+    const buttonLength = $button.length;
+while (handlerIndex < buttonLength){
+$button[handlerIndex].addEventListener('click', (e) => {
     if (correct === e.target.textContent) {
         window.alert("正解！");
     } else {
         window.alert("不正解！");
     }
 });
-buttonIndex++;
+handlerIndex++;
 }
-
+}
 
 
 
